@@ -1,9 +1,9 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/focal64"
 
-  # Resurslarni tejash (Sizning holatingiz uchun juda muhim)
+  # Resurslarni tejash
   config.vm.provider "virtualbox" do |vb|
-    vb.memory = "2048" # Har bir VMga 2GB RAM bering
+    vb.memory = "2048" # Har bir VMga 2GB RAM berildi
     vb.cpus = 2        # 2 ta yadro ishni tezlashtiradi
   end
 

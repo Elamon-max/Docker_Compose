@@ -160,10 +160,4 @@ services:
     ports:
       - "80:80"
     volumes:
-      # ./ o'rniga to'liq yo'lni yozish Swarm-da ishonchliroq
       - /home/vagrant/nginx.conf:/etc/nginx/nginx.conf:ro
-    deploy:
-      placement:
-        constraints: [node.role == manager] # Nginx fayli bor joyda tursin
-      restart_policy:
-        condition: on-failure
