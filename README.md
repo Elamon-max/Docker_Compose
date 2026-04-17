@@ -45,7 +45,7 @@ izoh: **docker** buyrugi natijasi.
 ![alt text](<screen/Screenshot from 2026-04-14 09-58-06.png>)\
 ![alt text](<screen/Screenshot from 2026-04-13 14-57-10.png>)\
 **docker-compose up -d**   natijasi, barcha kontainerlar va veb xizmatlar mavjudligi.
-Loyiha konfiguratsiyasini ko'rish uchun [bu yerni bosing](./services/docker-compose.yml).
+Loyiha konfiguratsiyasini ko'rish uchun [bu yerni bosing](src/services/docker-compose.yml).
 
 ## 🧪 3. Postman Test Natijalari
 Backend funksionalligini tekshirish uchun Postman Runner orqali integratsion testlar o'tkazildi. Barcha so'rovlar muvaffaqiyatli amalga oshirildi.
@@ -148,12 +148,12 @@ Barcha mikroservis obrazlari optimallashtirildi va **Docker Hub**ga yuklandi. `d
 ![alt text](screen/part3.6.png)
 * **Stekni ishga tushirish:** `docker stack deploy -c docker-compose.yml mening_loyiha `
 * **Obrazlar manbasi:** Docker Hub (Public/Private Registry)\
-Loyiha konfiguratsiyasini ko'rish uchun [bu yerni bosing](./services/docker-compose.yml).
+Loyiha konfiguratsiyasini ko'rish uchun [bu yerni bosing](src/services/docker-compose.yml).
 ---
 
 ## 🛡 3. Nginx Proksi-server va Xavfsizlik
 Tizim xavfsizligini ta'minlash uchun **Overlay Network** (ustki tarmoq) yaratildi. \
-Loyiha konfiguratsiyasini ko'rish uchun [bu yerni bosing](./services/nginx.conf).
+Loyiha konfiguratsiyasini ko'rish uchun [bu yerni bosing](src/services/nginx.conf).
 * **Nginx Gateway:** Faqat Nginx proksi-serveri tashqi portga (80) ochildi.
 * **Izolyatsiya:** `gateway` va `session` xizmatlari to'g'ridan-to'g'ri tashqaridan ulanib bo'lmaydigan qilib yopildi. Barcha so'rovlar Nginx orqali ichki overlay tarmog'i bo'ylab yo'naltirildi.
 
