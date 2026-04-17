@@ -19,7 +19,7 @@ Multi-stage Build: Obraz hajmini kamaytirish uchun qurish va ishga tushirish bos
 Alpine Base Images: OS darajasidagi ortiqcha fayllarni cheklash uchun **bellsoft/liberica-openjdk-alpine:8** obrazidan foydalanildi.
 
 Layer Optimization: Maven kutubxonalarini keshlashtirish orqali build vaqti optimallashtirildi.
-Loyiha konfiguratsiyasini ko'rish uchun [bu yerni bosing](./services/session-service/Dockerfile).
+Loyiha konfiguratsiyasini ko'rish uchun [bu yerni bosing](.src/services/session-service/Dockerfile).
 
 ## 📊 Obrazlar hajmi tahlili (Image Size Analysis)
 Obrazlar o'lchamini aniqlash uchun **docker images**, **docker inspect** va **docker history** metodlaridan foydalanildi.
